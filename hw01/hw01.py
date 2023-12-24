@@ -99,12 +99,15 @@ def with_if_function():
 
 def cond():
     "*** YOUR CODE HERE ***"
+    return False
 
 def true_func():
     "*** YOUR CODE HERE ***"
+    print("42")
 
 def false_func():
     "*** YOUR CODE HERE ***"
+    print("47")
 
 
 def hailstone(n):
@@ -123,4 +126,13 @@ def hailstone(n):
     7
     """
     "*** YOUR CODE HERE ***"
-
+    step = 1
+    while n != 1:
+        print(n)
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3*n + 1
+        step += 1
+    print(1)
+    return step
